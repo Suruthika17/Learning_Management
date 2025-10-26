@@ -1,0 +1,406 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f6f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #1f78b4;
+    transition: color 0.3s;
+  }
+  
+  a:hover {
+    color: #0b3d91;
+  }
+  
+  /* Buttons as anchors */
+  .btn {
+    background-color: #1f78b4;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 5px;
+    display: inline-block;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #155d8b;
+  }
+  
+  .small-btn {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+  }
+  
+  .enroll-btn {
+    background-color: #28a745;
+  }
+  
+  .enroll-btn:hover {
+    background-color: #1e7e34;
+  }
+  
+  .logout-btn {
+    background-color: #dc3545;
+  }
+  
+  .logout-btn:hover {
+    background-color: #a71d2a;
+  }
+  
+  .header {
+    background: #115293;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header h1 {
+    margin: 0;
+  }
+  
+  .header nav a {
+    margin-left: 15px;
+  }
+  
+  .form-container {
+    max-width: 420px;
+    margin: 80px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  }
+  
+  .form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-container label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 600;
+  }
+  
+  .form-container input,
+  .form-container select {
+    width: 100%;
+    padding: 10px 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  .form-container input:focus,
+  .form-container select:focus {
+    border-color: #1f78b4;
+    outline: none;
+  }
+  
+  .form-container p {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .form-container .link {
+    color: #1f78b4;
+    font-weight: 600;
+  }
+  
+  .dashboard-section {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  
+  .dashboard-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .card {
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    flex: 1 1 280px;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  .courses-section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  
+  .course-card {
+    background: white;
+    padding: 20px 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+  }
+  
+  .course-card h2 {
+    margin-top: 0;
+  }
+  
+  .course-card p {
+    font-size: 0.9rem;
+    margin: 8px 0 15px;
+  }
+  
+/* Buttons and basic styles shared earlier */
+
+.grades-table {
+    width: 90%;
+    margin: 30px auto;
+    border-collapse: collapse;
+  }
+  
+  .grades-table th,
+  .grades-table td {
+    border: 1px solid #ccc;
+    padding: 12px 18px;
+    text-align: center;
+  }
+  
+  .grades-table th {
+    background: #155d8b;
+    color: white;
+  }
+  
+  .notification-list {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .notification-list li {
+    background: #eef6ff;
+    border-left: 5px solid #1f78b4;
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .course-details {
+    max-width: 800px;
+    margin: 30px auto;
+    background: white;
+    padding: 25px 30px;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  }
+  
+  .course-details h2 {
+    margin-top: 0;
+    color: #1f78b4;
+  }
+  
+  .course-details ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    font-size: 1rem;
+  }
+  
+  .course-details ul li {
+    margin: 10px 0;
+  }
+  
+  .enroll-btn {
+    background-color: #28a745 !important;
+  }
+  
+  .enroll-btn:hover {
+    background-color: #1e7e34 !important;
+  }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f6f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .form-container {
+    max-width: 420px;
+    margin: 80px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  .form-container h2 {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 600;
+    text-align: left;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  input:focus {
+    border-color: #1f78b4;
+    outline: none;
+  }
+  
+  .btn {
+    background-color: #1f78b4;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 600;
+    width: 100%;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #155d8b;
+  }
+  
+  .link {
+    color: #1f78b4;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+  }
+  
+  .link:hover {
+    text-decoration: underline;
+  }
+/* Base styles omitted for brevity; include your previous styles */
+
+/* Background Images */
+body.login-bg {
+  background: url('images/login-bg.jpg') no-repeat center center fixed;
+  background-size: contain;
+}
+body.dashboard-bg {
+  background: url('images/dashboard-bg.jpg') no-repeat center top fixed;
+  background-size: cover;
+}
+body.courses-bg {
+  background: url('images/courses-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+body.profile-bg {
+  background: url('images/profile-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+body.grades-bg {
+  background: url('images/grades.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Overlay content containers for readability */
+.form-container, .dashboard-section, .courses-section, .profile-container {
+  background-color: rgba(255,255,255,0.8);
+  max-width: 900px;
+  margin: 45px auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Header styling */
+.header {
+  background-color: rgba(35, 44, 61, 0.8);
+  padding: 15px 30px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 0 0 10px 10px;
+}
+
+/* Button and link styles retained as before */
+.btn {
+  background-color: #1f78b4;
+  color: white;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #155d8b;
+}
+.logout-btn {
+  background-color: #dc3545;
+}
+.logout-btn:hover {
+  background-color: #a71d2a;
+}
+.enroll-btn {
+  background-color: #28a745;
+}
+.enroll-btn:hover {
+  background-color: #1e7e34;
+}
+
+/* Table styling for grades */
+.grades-table {
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.grades-table th, .grades-table td {
+  padding: 15px 20px;
+  text-align: center;
+}
+.grades-table thead {
+  background-color: #1f78b4;
+  color: white;
+}
+.grades-table tbody tr:nth-child(odd) {
+  background-color: #fafafa;
+}
+
+/* Link styles */
+.link {
+  color: #1f78b4;
+  font-weight: 600;
+  text-decoration: none;
+}
+.link:hover {
+  text-decoration: underline;
+}
+
